@@ -1,0 +1,122 @@
+/* Full-screen background */
+.patient-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-left: 130px;
+}
+
+/* Registration Box */
+.patient-box {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 900px;
+  background: rgba(0, 146, 190, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+}
+
+/* Left Section */
+.patient-left {
+  flex: 1;
+  background: linear-gradient(135deg, #007bff, #000000);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.patient-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.patient-image {
+  width: 80%;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+/* Right Section */
+.patient-right {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the input and button */
+}
+
+/* Input Fields */
+.patient-right input,
+.patient-right select {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.patient-right button {
+
+  width: 20%; /* Adjusted width */
+  padding: 12px;
+  background: #03d3de;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+  color: black;
+  border-bottom: solid 2px black;
+  margin-top: 20px; /* Space between input and button */
+}
+
+/* Button Hover Effect */
+.patient-right button:hover {
+  background: #46d179;
+  border-bottom: solid 0px black;
+  border-left: solid 2px black;
+}
+
+/* Messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .patient-box {
+      flex-direction: column;
+      width: 90%;
+  }
+
+  .patient-right button {
+      width: 80%; /* Make button wider on small screens */
+  }
+}
+/* Button Container */
+
+
+.patient-back-btn{
+  margin-top: 70px;
+  margin-right: 300px;
+  background-color: #022f542b;
+}

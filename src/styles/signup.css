@@ -1,0 +1,126 @@
+/* Full-screen background styling */
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url("https://w0.peakpx.com/wallpaper/213/560/HD-wallpaper-blue-neon-background-blue-waves-background-abstract-blue-backgrounds-creative-blue-abstraction.jpg") center/cover no-repeat;
+}
+
+/* Signup Box */
+.signup-box {
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  background: rgba(0, 146, 190, 0.811);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Section */
+.signup-left {
+  flex: 1;
+  background: linear-gradient(135deg, #007bff, #000000);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.signup-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.signup-image {
+  width: 80%;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+/* Right Section */
+.signup-right {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Input Fields */
+.signup-right input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* File Upload */
+.signup-right .file-label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Profile Image Preview */
+.profile-preview {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 2px solid #007bff;
+}
+
+/* Buttons */
+.signup-right button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.signup-right button:hover {
+  background: #0056b3;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-box {
+      flex-direction: column;
+      width: 90%;
+  }
+
+  .signup-left {
+      padding: 10px;
+  }
+
+  .signup-image {
+      width: 60%;
+  }
+}

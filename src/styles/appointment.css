@@ -1,0 +1,23 @@
+.appointment-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .appointment-card {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .appointment-card:hover {
+    background: #0056b3;
+  }
+  

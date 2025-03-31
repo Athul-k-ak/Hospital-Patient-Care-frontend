@@ -1,0 +1,215 @@
+/* Main container */
+.doctor-register-container {
+  display: flex;
+  height: 100%;
+  /* background: url('https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg') center/cover no-repeat; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+ 
+
+}
+
+/* Registration box */
+.doctor-register-box {
+  background: rgba(255, 255, 255, 0.301);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  width: 85%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: #131313;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  margin-top: 10px;
+  margin-left: 200px;
+}
+input , select {
+  width: 90%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* Header Styling */
+.doctor-register-box h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+
+  /* Cross-Browser Compatibility */
+  -webkit-background-clip: text; /* Chrome, Safari */
+  -moz-background-clip: text;    /* Firefox (Old Versions) */
+  -o-background-clip: text;      /* Opera (Old Versions) */
+  background-clip: text;         /* Standard */
+
+  -webkit-text-fill-color: transparent; /* Required for WebKit-based browsers */
+
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #007bff;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Form Layout */
+.doctor-register-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Form Sections */
+.doctor-form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Beautiful Input Fields */
+.doctor-register-form input,
+.doctor-register-form select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #f9f9f9;
+  transition: 0.3s ease;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Focus & Hover Effects */
+.doctor-register-form input:focus,
+.doctor-register-form select:focus {
+  background: white;
+  border-color: #0056b3;
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+  outline: none;
+  transform: scale(1.02);
+}
+
+/* Labels */
+.doctor-register-form label {
+  font-weight: bold;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Available Days & Time Slots - Well-Aligned Checkboxes */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Styled Checkbox */
+.checkbox-group input {
+  width: 18px;
+  height: 18px;
+  accent-color: #007bff;
+}
+
+/* Profile Image Upload */
+.profile-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+  margin-top: 10px;
+}
+
+/* 🌟 Stylish Register Button */
+.doctor-register-button {
+  width: 50%;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  margin: 100px 0 0 200px;
+}
+
+.doctor-register-button:hover {
+  background: linear-gradient(135deg, #0056b3, #000000);
+  box-shadow: 0px 4px 10px rgba(0, 91, 187, 0.5);
+  transform: scale(1.05);
+}
+
+/* Back Button */
+.back-btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background-color: #a8a4a4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: bold;
+  margin: 70px 0 20px 400px;
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #d2d2d2, #191919);
+}
+
+/* Error & Success Messages */
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .doctor-register-box {
+    width: 95%;
+  }
+
+  .doctor-register-form {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox-group {
+    grid-template-columns: 1fr;
+  }
+}
