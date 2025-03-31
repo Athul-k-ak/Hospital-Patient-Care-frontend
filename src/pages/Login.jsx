@@ -15,7 +15,7 @@ const Login = () => {
   useEffect(() => {
     const checkAdmin = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/auth/check-admin");
+        const res = await axios.get("https://hospital-patient-care-backend.onrender.com/api/auth/check-admin");
         setAdminExists(res.data.adminExists);
       } catch (err) {
         console.error("Error checking admin:", err);
